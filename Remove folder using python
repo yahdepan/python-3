@@ -1,0 +1,15 @@
+#Importing OS
+import os
+
+#Checking the folder exist
+folder=str(input("Enter for the folder name : "))
+if os.path.exists(folder):
+    print("Yes")
+else:
+    print("No") 
+
+#Removing the folder, If exists
+rem=int(input('Do you want to remove the folder? 1[YES] & 2[NO]'))
+if rem==1:
+    os.rmdir(folder)
+    print("Folder has been removed")       
